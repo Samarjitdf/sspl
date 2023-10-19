@@ -1,0 +1,220 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #f2f2f2;
+}
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 50px;
+    color:#000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+}
+.heading p{
+    font-size: 18px;
+    color:#666;
+    margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}   
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.aboutimage{
+    flex: 1;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.aboutimage img{
+    max-width: 100%;  /* Adjusted this value to make the image responsive */
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.aboutcontent{
+    flex: 2;  /* Adjusted this value to make the content area wider */
+}
+.aboutimage:hover img{
+    transform: scale(1.2);
+}
+.aboutcontent p{
+    font-size: 18px;
+    line-height: 1.5;
+    color:#666;
+}
+@media screen and (max-width: 768px){
+    .heading{
+        padding:0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding:0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .aboutimage{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .aboutcontent p{
+        padding:0px;
+        font-size: 16px;
+    }
+}
+
+.heading {
+    text-align: center; /* Center the text */
+    margin-top: 1rem; /* Add space above the heading */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    > div {
+        background: grey;
+        padding: 1rem;
+        display: grid;
+        place-items: center;
+        &::before {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            grid-area: 1 / 1 / 2 / 2;
+        }
+    }
+}
+
+body {
+    margin: 2rem;
+}.heading {
+            text-align: center; /* Center the text */
+            margin-top: 1rem; /* Add space above the heading */
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 1rem;
+            > div {
+                background: grey;
+                padding: 1rem;
+                display: grid;
+                place-items: center;
+                &::before {
+                    content: "";
+                    display: block;
+                    padding-bottom: 100%;
+                    grid-area: 1 / 1 / 2 / 2;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    grid-area: 1 / 1 / 2 / 2;
+                }
+            }
+        }
+
+        body {
+            margin: 2rem;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .feat {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-head h4 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        .section-head p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .item {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .icon {
+            font-size: 36px;
+            color: #4caf50;
+        }
+
+        .item h6 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .item p {
+            font-size: 16px;
+            color: #666;
+        }

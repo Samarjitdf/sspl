@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            background-color: #f2f2f2;
+        }
+        .heading{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .heading h1{
+            font-size: 50px;
+            color:#000;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .heading h1::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            display: block;
+            margin: 0 auto;
+            background-color: #4caf50;
+        }
+        .heading p{
+            font-size: 18px;
+            color:#666;
+            margin-bottom: 35px;
+        }
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }   
+        .about{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .aboutimage{
+            flex: 1;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+        .aboutimage img{
+            max-width: 100%;  /* Adjusted this value to make the image responsive */
+            height: auto;
+            display: block;
+            transition: 0.5s ease;
+        }
+        .aboutcontent{
+            flex: 2;  /* Adjusted this value to make the content area wider */
+        }
+        .aboutimage:hover img{
+            transform: scale(1.2);
+        }
+        .aboutcontent p{
+            font-size: 18px;
+            line-height: 1.5;
+            color:#666;
+        }
+        @media screen and (max-width: 768px){
+            .heading{
+                padding:0px 20px;
+            }
+            .heading h1{
+                font-size: 36px;
+            }
+            .heading p{
+                font-size: 17px;
+                margin-bottom: 0px;
+            }
+            .container{
+                padding:0px;
+            }
+            .about{
+                padding: 20px;
+                flex-direction: column;
+            }
+            .aboutimage{
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+            .aboutcontent p{
+                padding:0px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>About Us</h1>
+        <p> Timely tested, Heartly Trusted</p>
+    </div>
+    <div class="container">
+        <section class="About">
+            <div class="about">
+                <div class="aboutimage">
+                    <img src="ai.jpg">
+                </div>
+                <div class="aboutcontent">
+                    <p>
+                        We have 20+ Years of Core domain experience in Property Tax Assessment. we use GIS technology for referencing MIS activities in Property tax Department, We offer various kind of android applications for Fast survey and Tax Collection. we Provide end to end Software Service and support for Property survey and Tax Assessment.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
